@@ -1,8 +1,7 @@
 import { TelefoneServicePort } from "../../application/ports/telefone-service.port";
 import { Telefone } from "../../domain/models/telefone";
 
-
-class InMemoryCustomerAdapter implements TelefoneServicePort {
+class InMemoryTelefoneAdapter implements TelefoneServicePort {
   createTelefone(telefone: string[]): Promise<Telefone> {
     throw new Error("Method not implemented.");
   }
@@ -11,3 +10,5 @@ class InMemoryCustomerAdapter implements TelefoneServicePort {
   }
   private telefones: Telefone[] = [];
 }
+
+export { InMemoryTelefoneAdapter };
