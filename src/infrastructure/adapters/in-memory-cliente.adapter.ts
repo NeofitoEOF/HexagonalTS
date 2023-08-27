@@ -1,7 +1,7 @@
 import { ClienteServicePort } from "../../application/ports/cliente-service.port";
 import { Clientes } from "../../domain/models/cliente";
 
-class InMemoryCustomerAdapter implements ClienteServicePort {
+class InMemoryClienteAdapter implements ClienteServicePort {
   private clientes: Clientes[] = [];
 
   async createCliente(name: string): Promise<Clientes> {
@@ -12,4 +12,4 @@ class InMemoryCustomerAdapter implements ClienteServicePort {
   }
 }
 
-export { InMemoryCustomerAdapter };
+export { InMemoryClienteAdapter };
