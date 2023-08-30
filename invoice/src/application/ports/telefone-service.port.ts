@@ -1,8 +1,8 @@
 import { Telefone } from "../../domain/models/telefone";
+import { TelefoneEntity } from "../../domain/entity/telefone-entity";
 
 interface TelefoneServicePort {
-  createTelefone(telefone: string[]): Promise<Telefone>;
-  getTelefone(id: string): Promise<Telefone>;
+  save(telefoneEntity: TelefoneEntity);
 }
 
 export { TelefoneServicePort };
