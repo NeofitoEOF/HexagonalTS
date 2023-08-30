@@ -1,4 +1,4 @@
-import Connection from "../../../ports/Connection/connection";
+import Connection from "../../../ports/ConexaoBanco/connection";
 import TransactionDAO from "./transactionDAO";
 
 export default class TransactionDAODatabase implements TransactionDAO {

@@ -1,4 +1,4 @@
-import Connection from "../../../ports/Connection/connection";
+import Connection from "../../../ports/ConexaoBanco/connection";
 import pgp from "pg-promise";
 
 export class PgPromiseAdapter implements Connection {
